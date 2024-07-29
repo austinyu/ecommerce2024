@@ -14,7 +14,7 @@ const getSalesData = async () => {
     _count: true,
   });
 
-  await wait(2000);
+  // await wait(2000);
 
   return {
     amount: (data._sum.pricePaidInCents || 0) / 100,
