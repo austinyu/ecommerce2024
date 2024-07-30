@@ -3,7 +3,7 @@ import { cache as reactCache } from "react";
 
 type CallBack = (...args: any[]) => Promise<any>;
 
-export function cache<T extends CallBack>(
+export function my_cache<T extends CallBack>(
   cb: T,
   keyParts: string[],
   options: { revalidate?: number | false; tags?: string[] } = {}
